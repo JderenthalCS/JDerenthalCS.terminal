@@ -1,0 +1,16 @@
+body{background-color:#111;color:#FFCC66;font-family:'Courier New',Courier,monospace;margin:0;padding:0;display:flex;align-items:center;justify-content:center;height:100vh}
+#terminal{width:80%;max-width:800px;height:70%;background-color:#000;border:2px solid #FFCC66;box-shadow:0 0 15px #FFCC66,0 0 30px #FFCC66,0 0 45px rgba(255,204,102,0.5);padding:10px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;overflow-y:auto;border-radius:10px}
+#output{flex-grow:1;white-space:pre-wrap;overflow-y:auto;color:#FFCC66}
+#input-area{display:flex;align-items:center;padding-top:5px}
+#prompt{display:inline-flex;color:#FFCC66;margin-right:5px}
+#user-input{background:none;border:none;color:#FFCC66;outline:none;width:100%;font-size:1em}
+#blinking-slash{animation:blink 1s step-end infinite;color:#FFCC66;margin-left:5px}
+@keyframes blink{50%{opacity:0}}
+#ascii-art{font-family:'Courier New',Courier,monospace;color:#FFCC66;white-space:pre;margin-bottom:10px;margin-left:20px;text-align:left}
+#footer{position:absolute;bottom:0;width:100%;text-align:center;font-family:'Courier New',Courier,monospace;font-size:12px;color:#FFCC66;background-color:black;padding:5px 0}
+#output{flex-grow:1;white-space:pre-wrap;overflow-y:auto;color:#FFCC66}
+#output::-webkit-scrollbar{width:8px}
+#output::-webkit-scrollbar-track{background:#111}
+#output::-webkit-scrollbar-thumb{background:#555;border-radius:4px}
+#output::-webkit-scrollbar-thumb:hover{background:#FFCC66}
+#user-input::placeholder{color:#555;font-style:italic;opacity:0.7}
